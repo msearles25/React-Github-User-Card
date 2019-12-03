@@ -1,9 +1,12 @@
 import React from 'react';
 
-const CardGird = props => {
+import Card from './Card';
+
+const CardGrid = props => {
     return (
         <div>
-
+            <h1>hello</h1>
+            <Card user={props.user}/>
         </div>
     )
 }

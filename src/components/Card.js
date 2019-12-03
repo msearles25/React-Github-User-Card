@@ -1,20 +1,21 @@
 import React from 'react';
 
-const Card = props => {
+const Card = ({user}) => {
     return (
         <div className='card'>
-            <img src={props} />
+            <img src={user.avatar_url} />
             <div className='card-info'>
-                <h3 className='name'>{props}</h3>
-                <p className='username'>{props}</p>
-                <p>Location: {props}</p>
+                <h3 className='name'>{user.name}</h3>
+                <p className='username'>{user.login}</p>
+                <p>Location: {user.location}</p>
                 <p>Profile:
-                    <a href={props}>{props}</a>
+                    <a href={user.html_url}>{user.html_ur}</a>
                 </p>
-                <p>Followers: {props}</p>
-                <p>Following: {props}</p>
-                <p>Bio: {props}</p>
+                <p>Followers: {user.followers}</p>
+                <p>Following: {user.following}</p>
+                <p>Bio: {user.bio}</p>
             </div>
+            {console.log(user)}
         </div>
     )
 }
