@@ -6,6 +6,7 @@ class Search extends React.Component {
         return (
             <form onSubmit={this.props.searchUser}>
                 <input
+                    placeholder='Search a github username'
                     type='text'
                     value={this.props.searchResult}
                     onChange={this.props.handleChanges}
